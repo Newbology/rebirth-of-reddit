@@ -1,0 +1,129 @@
+// @media (min-width: 481px) {
+// }
+
+// @media (max-width: 480px) {
+//   * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+body {
+  background: url('/assets/bg.jpg');
+}
+.header-box {
+  background-color: whitesmoke;
+  height: 108px;
+  border: 1px solid black;
+  // grid-area: header-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'header-logo header-logo header-logo plus-icon'
+    'head-nav head-nav head-nav head-nav';
+}
+.header-logo {
+  grid-area: header-logo;
+}
+
+.plus-icon {
+  border: 2px solid orange;
+  grid-area: plus-icon;
+
+  margin-left: 45%;
+  margin-top: 17%;
+  width: 30px;
+  height: 30px;
+}
+.plus-button {
+  color: #8b0000;
+  margin: -9px;
+  text-align: center;
+  font-size: 36.5px;
+}
+.head-nav {
+  border: 1px solid black;
+  grid-area: head-nav;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0.5%;
+}
+
+#nav-random,
+#nav-original,
+#nav-runescape,
+#nav-shroud {
+  background-color: #383838;
+  color: rgb(145, 145, 145);
+  height: 40px;
+}
+.nav-content {
+  margin-top: 10px;
+}
+
+.content-area {
+  background-color: white;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 8px;
+  display: grid;
+  grid-gap: 1em;
+  height: 50vh;
+  width: 95%;
+}
+.content-area > .inner-container {
+  height: 100%;
+}
+.inner-container {
+  border: 1px solid transparent;
+  width: 90%;
+  margin: 17.5px;
+}
+.inner-container > img {
+  width: 100%;
+}
+
+.article-picture {
+  height: 25vh;
+}
+.article-header {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  color: rgb(37, 37, 37);
+  margin-bottom: 5px;
+  text-align: justify;
+  text-overflow: ellipsis;
+  white-space: normal;
+  height: 9vh;
+
+  overflow: hidden;
+}
+
+.article-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+
+  .author,
+  .article-age,
+  .views,
+  .bullet1,
+  .bullet2 {
+    font-size: 14px;
+    color: rgb(138, 138, 138);
+    font-family: 'Lato', sans-serif;
+    white-space: normal;
+  }
+}
+
+.article {
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+}
+
+.logo-lines {
+  display: none;
+}
